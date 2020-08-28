@@ -41,7 +41,10 @@ export default function Header(props: {
     selectedTheme(!currentPalette ? 'dark' : 'light');
   };
   return (
-    <div style={{ backgroundColor: currentPalette ? '#eeeeee' : '#e3f2fd' }}>
+    <div
+      data-testid="header-container"
+      style={{ backgroundColor: currentPalette ? '#eeeeee' : '#e3f2fd' }}
+    >
       <ThemeProvider theme={customTheme}>
         <AppBar position="static">
           <Toolbar className={classes.toolbar}>

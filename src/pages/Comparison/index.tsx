@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Comparison = (props: any) => {
+const Comparison = (props: { cars: any }) => {
   const classes = useStyles();
   const [currentTheme, setCurrentTheme] = useState('light');
   const { cars } = props;

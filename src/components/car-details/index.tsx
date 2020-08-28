@@ -31,7 +31,13 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CarDetails(props: any) {
+export default function CarDetails(props: {
+  car: any;
+  onCarSelected?: Function;
+  onCarUnselected?: Function;
+  currentTheme: string;
+  isFullList?: boolean;
+}) {
   const {
     car,
     onCarSelected,
@@ -44,11 +50,15 @@ export default function CarDetails(props: any) {
   const [modalVisible, setModalVisibility] = useState(false);
 
   const handleAddToCompareButton = React.useCallback(() => {
-    onCarSelected(car.id);
+    if (onCarSelected) {
+      onCarSelected(car.id);
+    }
   }, [onCarSelected, car]);
 
   const handleRemoveCompareButton = React.useCallback(() => {
-    onCarUnselected(car.id);
+    if (onCarUnselected) {
+      onCarUnselected(car.id);
+    }
   }, [onCarUnselected, car]);
 
   const handleModalVisibility = React.useCallback(
@@ -62,10 +72,14 @@ export default function CarDetails(props: any) {
     <>
       {car.selectedToCompare && (
         <div className={classes.iconContainer}>
-          <CheckIcon color="primary" className={classes.icon} />
+          <CheckIcon
+            data-testid="car-details-check-icon"
+            color="primary"
+            className={classes.icon}
+          />
         </div>
       )}
-      <Card className={classes.root}>
+      <Card className={classes.root} data-testid="car-details-card">
         <CardActionArea onClick={() => handleModalVisibility(true)}>
           <CardMedia
             className={classes.media}
@@ -90,6 +104,7 @@ export default function CarDetails(props: any) {
                 size="small"
                 color="secondary"
                 onClick={handleAddToCompareButton}
+                data-testid="car-details-add-button"
               >
                 Add to compare
               </Button>
@@ -100,6 +115,7 @@ export default function CarDetails(props: any) {
                 size="small"
                 color="secondary"
                 onClick={handleRemoveCompareButton}
+                data-testid="car-details-remove-button"
               >
                 Remove from comparison
               </Button>

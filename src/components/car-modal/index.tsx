@@ -24,7 +24,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CarModal(props: any) {
+export default function CarModal(props: {
+  car: any;
+  modalVisible: boolean;
+  onModalVisibility: Function;
+}) {
   const { car, modalVisible, onModalVisibility } = props;
   const classes = useStyles();
 
@@ -33,7 +37,12 @@ export default function CarModal(props: any) {
   }, [onModalVisibility]);
 
   return (
-    <Modal className={classes.modal} open={modalVisible} onClose={handleClose}>
+    <Modal
+      data-testid="car-modal-card"
+      className={classes.modal}
+      open={modalVisible}
+      onClose={handleClose}
+    >
       <div className={classes.content}>
         <div className={classes.image}>
           <img src={car.img_url} alt={car.make} />

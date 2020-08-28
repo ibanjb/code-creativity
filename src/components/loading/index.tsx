@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Loading() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div data-testid="loading-circular-progress" className={classes.root}>
       <CircularProgress />
     </div>
   );

@@ -59,6 +59,7 @@ export default function SearchBox(props: { onSearchChange: any }) {
         <SearchIcon />
       </div>
       <InputBase
+        data-testid="search-box-input"
         placeholder="Search…"
         classes={{
           root: classes.inputRoot,
