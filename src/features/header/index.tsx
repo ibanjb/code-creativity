@@ -68,11 +68,13 @@ export default function Header(props: {
         <AppBar position="static">
           <Toolbar className={classes.toolbar}>
             {title}
-            <div className={classes.createButton}>
-              <Button variant="contained" onClick={handleCreateCarClick}>
-                Add new car
-              </Button>
-            </div>
+            {!hideSearch && (
+              <div className={classes.createButton}>
+                <Button variant="contained" onClick={handleCreateCarClick}>
+                  Add new car
+                </Button>
+              </div>
+            )}
             <Typography variant="subtitle2">Change palette</Typography>
             <Switch checked={currentPalette} onChange={handleThemeChange} />
             {!hideSearch && <SearchBox onSearchChange={onSearchChange} />}
