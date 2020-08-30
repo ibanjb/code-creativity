@@ -7,6 +7,12 @@ Retrieve information about cars and displayed as a card list. Implement search a
 ![UnitTest](https://img.shields.io/badge/Unit%20test-Completed-blueviolet)
 ![TestCoverage](https://img.shields.io/badge/Test%20coverage-82%25-orange)
 
+## IMPORTANT (read before proceed)
+
+![gitBranch](./images/screenshot12.png)
+
+In the **develop** branch you will find the last version with the CRUD operations added on this PoC. The first approach (located in **master** branch) was to create just a comparison page with a search button, palette switch, dialogs and routing but I wanted to include more features like add, update and delete functionality and, of course, minor fixes/changes related with the UI.
+
 ## Summary
 
 ### Requirements
@@ -25,7 +31,7 @@ Retrieve information about cars and displayed as a card list. Implement search a
 
 ### Test coverage
 
-![testCoverate](./images/screenshot7.png)
+![testCoverage](./images/screenshot7.png)
 
 ## Exercise description
 
