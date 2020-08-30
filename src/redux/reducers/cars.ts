@@ -47,6 +47,42 @@ const cars = (state = initialState, action: any) => {
           car.id === action.carId ? { ...car, selectedToCompare: false } : car
         ),
       };
+    case types.CREATE_CAR_SUCCESS:
+      const createList = [...state.list];
+      createList.unshift({
+        id: new Date().getTime(),
+        make: action.manufacturer,
+        model: action.model,
+        img_url: action.image,
+        year: action.productionYear,
+        horsepower: action.horsepower,
+        price: action.price,
+        selectedToCompare: false,
+      });
+      return {
+        ...state,
+        list: createList,
+      };
+    case types.UPDATE_CAR_SUCCESS:
+      const updateList = [...state.list];
+      let car = updateList.find((x) => x.id === action.carId);
+      if (car) {
+        car.make = action.manufacturer;
+        car.model = action.model;
+        car.img_url = action.image;
+        car.year = action.productionYear;
+        car.horsepower = action.horsepower;
+        car.price = action.price;
+      }
+      return { ...state, list: updateList };
+    case types.DELETE_CAR_SUCCESS:
+      const deleteList = [
+        ...state.list.filter((car) => car.id !== action.carId),
+      ];
+      return {
+        ...state,
+        list: deleteList,
+      };
     default:
       return { ...state };
   }

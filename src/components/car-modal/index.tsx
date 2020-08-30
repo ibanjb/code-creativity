@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Modal, Typography } from '@material-ui/core';
+import { Dialog, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -13,8 +13,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
   },
-  image: {
+  imageContainer: {
     flex: 3,
+    margin: 5,
+  },
+  image: {
+    maxWidth: 350,
+    height: 'auto',
   },
   description: {
     flex: 2,
@@ -37,15 +42,15 @@ export default function CarModal(props: {
   }, [onModalVisibility]);
 
   return (
-    <Modal
+    <Dialog
       data-testid="car-modal-card"
       className={classes.modal}
       open={modalVisible}
       onClose={handleClose}
     >
       <div className={classes.content}>
-        <div className={classes.image}>
-          <img src={car.img_url} alt={car.make} />
+        <div className={classes.imageContainer}>
+          <img className={classes.image} src={car.img_url} alt={car.make} />
         </div>
         <div className={classes.description}>
           <div>
@@ -70,6 +75,6 @@ export default function CarModal(props: {
           </div>
         </div>
       </div>
-    </Modal>
+    </Dialog>
   );
 }

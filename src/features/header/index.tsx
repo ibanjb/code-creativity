@@ -3,12 +3,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { indigo, grey } from '@material-ui/core/colors';
-import { AppBar, Typography, Switch } from '@material-ui/core';
+import { AppBar, Typography, Switch, Button } from '@material-ui/core';
 import SearchBox from '../../components/search-box';
 
 const useStyles = makeStyles(() => ({
   toolbar: {
     justifyContent: 'flex-end',
+  },
+  createButton: {
+    marginRight: 20,
   },
 }));
 
@@ -18,8 +21,17 @@ export default function Header(props: {
   selectedTheme: Function;
   hideSearch?: boolean;
   onSearchChange: any;
+  onCreateCarClick?: any;
+  onCarCreate?: Function;
 }) {
-  const { children, title, selectedTheme, hideSearch, onSearchChange } = props;
+  const {
+    children,
+    title,
+    selectedTheme,
+    hideSearch,
+    onSearchChange,
+    onCarCreate,
+  } = props;
   const classes = useStyles();
   const [currentPalette, setPalette] = useState(false);
   const palletType = currentPalette ? 'dark' : 'light';
@@ -40,6 +52,13 @@ export default function Header(props: {
     setPalette(!currentPalette);
     selectedTheme(!currentPalette ? 'dark' : 'light');
   };
+
+  const handleCreateCarClick = React.useCallback(() => {
+    if (onCarCreate) {
+      onCarCreate();
+    }
+  }, [onCarCreate]);
+
   return (
     <div
       data-testid="header-container"
@@ -49,6 +68,11 @@ export default function Header(props: {
         <AppBar position="static">
           <Toolbar className={classes.toolbar}>
             {title}
+            <div className={classes.createButton}>
+              <Button variant="contained" onClick={handleCreateCarClick}>
+                Add new car
+              </Button>
+            </div>
             <Typography variant="subtitle2">Change palette</Typography>
             <Switch checked={currentPalette} onChange={handleThemeChange} />
             {!hideSearch && <SearchBox onSearchChange={onSearchChange} />}

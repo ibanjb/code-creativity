@@ -2,18 +2,28 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, IconButton } from '@material-ui/core';
+import { Grid, Typography, IconButton, Snackbar } from '@material-ui/core';
 import CompareIcon from '@material-ui/icons/Compare';
 import CarDetails from '../../components/car-details';
 import Loading from '../../components/loading';
+import CreateCarModal from '../../components/create-car';
+import CommonDialog from '../../components/common-dialog';
 import Header from '../../features/header';
-import { thunkFetchCars } from '../../redux/thunks/cars';
+import {
+  thunkFetchCars,
+  thunkPostCar,
+  thunkPatchCar,
+  thunkDeleteCar,
+} from '../../redux/thunks/cars';
 import {
   addCarToComparison,
   removeCarFromComparison,
 } from '../../redux/actions/cars';
 
 const uri = 'http://localhost:3001/cars'; // TODO: This must be changed by a environment variable (for ex.)
+
+const addCar = 'Create  a new  car for the comparison';
+const updateCar = 'Update car';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -22,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    minHeight: 600,
   },
   gridContainer: {
     flexGrow: 1,
@@ -39,9 +50,23 @@ const useStyles = makeStyles((theme) => ({
 const Home = (props: any) => {
   const classes = useStyles();
   const [carsList, setCarsList] = useState([]);
+  const [carModalTitle, setCarModalTitle] = useState(addCar);
+  const [createCarVisible, setCreateCarVisible] = useState(false);
+  const [deleteCarVisible, setDeleteCarVisible] = useState(false);
+  const [selectedCar, setSelectedCar] = useState(null);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
   const [currentTheme, setCurrentTheme] = useState('light');
   const [comparisonCarsNumber, setComparisonCarsNumber] = useState(0);
-  const { cars, onOpenHome, onCarSelected, onCarUnselected, loading } = props;
+  const {
+    cars,
+    onOpenHome,
+    onCarSelected,
+    onCarUnselected,
+    loading,
+    onCreateCar,
+    OnUpdateCar,
+    onDeleteCar,
+  } = props;
 
   React.useEffect(() => {
     onOpenHome(uri);
@@ -74,6 +99,87 @@ const Home = (props: any) => {
     [setCarsList, cars]
   );
 
+  const handleCreateCarVisibililty = React.useCallback(
+    (visible) => {
+      setCreateCarVisible(visible);
+    },
+    [setCreateCarVisible]
+  );
+
+  const handleCarCreate = React.useCallback(
+    (carId) => {
+      setCarModalTitle(addCar);
+      setCreateCarVisible(true);
+      setSelectedCar(null);
+    },
+    [setCreateCarVisible]
+  );
+
+  const handleCarUpdate = React.useCallback(
+    (car: any) => {
+      setCarModalTitle(updateCar);
+      setSelectedCar(car);
+      setCreateCarVisible(true);
+    },
+    [setCreateCarVisible]
+  );
+
+  const handleCarDelete = React.useCallback((carId) => {
+    setDeleteCarVisible(true);
+    setSelectedCar(carId);
+  }, []);
+
+  const handleCarDeleteAcceptButton = (carId: number) => {
+    setDeleteCarVisible(false);
+    onDeleteCar(uri, selectedCar);
+    setSelectedCar(null);
+    setOpenSnackbar(true);
+  };
+
+  const handleCarDeleteCancelButton = () => {
+    setDeleteCarVisible(false);
+    setSelectedCar(null);
+  };
+
+  const handleCreateCarSubmit = React.useCallback(
+    (
+      id: number,
+      manufacturer: string,
+      model: string,
+      image: string,
+      productionYear: string,
+      horsepower: string,
+      price: string,
+      createCar: boolean
+    ) => {
+      if (createCar) {
+        onCreateCar(
+          uri,
+          manufacturer,
+          model,
+          image,
+          productionYear,
+          horsepower,
+          price
+        );
+      } else {
+        OnUpdateCar(
+          uri,
+          id,
+          manufacturer,
+          model,
+          image,
+          productionYear,
+          horsepower,
+          price
+        );
+      }
+
+      setCreateCarVisible(false);
+    },
+    [onCreateCar, OnUpdateCar]
+  );
+
   const headerTitle = (selectedNumber: number) => {
     if (selectedNumber <= 0) {
       return null;
@@ -100,6 +206,7 @@ const Home = (props: any) => {
       title={headerTitle(comparisonCarsNumber)}
       selectedTheme={handleSelectedTheme}
       onSearchChange={handleSearchChange}
+      onCarCreate={handleCarCreate}
     >
       {loading && (
         <div className={classes.loading}>
@@ -119,6 +226,8 @@ const Home = (props: any) => {
                       onCarUnselected={onCarUnselected}
                       currentTheme={currentTheme}
                       isFullList
+                      onCarUpdate={handleCarUpdate}
+                      onCarDelete={handleCarDelete}
                     />
                   </Grid>
                 ))}
@@ -127,6 +236,29 @@ const Home = (props: any) => {
           </Grid>
         </div>
       )}
+      <CreateCarModal
+        modalVisible={createCarVisible}
+        onModalVisibility={handleCreateCarVisibililty}
+        onCreateCarSubmit={handleCreateCarSubmit}
+        title={carModalTitle}
+        car={selectedCar}
+      />
+      <CommonDialog
+        title="Are you sure to delete this car?"
+        description="This action can not be undone"
+        visible={deleteCarVisible}
+        onAccept={handleCarDeleteAcceptButton}
+        onCancel={handleCarDeleteCancelButton}
+        acceptButton="Yes"
+        cancelButton="No"
+      />
+      <Snackbar
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        open={openSnackbar}
+        message="Action done!"
+        autoHideDuration={2000}
+        onClose={() => setOpenSnackbar(false)}
+      />
     </Header>
   );
 };
@@ -140,6 +272,53 @@ const mapDispatchToProps = (dispatch: any) => ({
   },
   onCarUnselected: async (carId: number) => {
     await dispatch(removeCarFromComparison(carId));
+  },
+  onCreateCar: async (
+    uri: string,
+    manufacturer: string,
+    model: string,
+    image: string,
+    productionYear: string,
+    horsepower: string,
+    price: string
+  ) => {
+    await dispatch(
+      thunkPostCar(
+        uri,
+        manufacturer,
+        model,
+        image,
+        productionYear,
+        horsepower,
+        price
+      )
+    );
+  },
+  OnUpdateCar: async (
+    uri: string,
+    carId: number,
+    manufacturer: string,
+    model: string,
+    image: string,
+    productionYear: string,
+    horsepower: string,
+    price: string
+  ) => {
+    await dispatch(
+      thunkPatchCar(
+        uri,
+        carId,
+        manufacturer,
+        model,
+        image,
+        productionYear,
+        horsepower,
+        price
+      )
+    );
+  },
+  onDeleteCar: async (uri: string, carId: number) => {
+    await dispatch(thunkDeleteCar(uri, carId));
   },
 });
 

@@ -6,7 +6,7 @@
       "horsepower": 237,
       "make": "alfa-romeo",
       "model": "4c",
-      "price": 55900.0,
+      "price": 55900,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M8a3a74ca54214aa8f59f312b20d67407H0&pid=15.1"
     },
     {
@@ -15,7 +15,7 @@
       "horsepower": 150,
       "make": "audi",
       "model": "a3",
-      "price": 42050.0,
+      "price": 42050,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M4fb83fa38daee899e5f9ad959228d1a2H0&pid=15.1"
     },
     {
@@ -24,7 +24,7 @@
       "horsepower": 252,
       "make": "audi",
       "model": "a4",
-      "price": 41100.0,
+      "price": 41100,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M5f243f1b175f98760155d0a4536c6f8cH0&pid=15.1"
     },
     {
@@ -33,7 +33,7 @@
       "horsepower": 252,
       "make": "audi",
       "model": "a6",
-      "price": 52100.0,
+      "price": 52100,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M87f9a7ad73341027ed0eb94569f2425eH0&pid=15.1"
     },
     {
@@ -42,7 +42,7 @@
       "horsepower": 333,
       "make": "audi",
       "model": "a7",
-      "price": 70950.0,
+      "price": 70950,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.Mf0b19510177fba1c2bfdc5997876bb2eH0&pid=15.1"
     },
     {
@@ -51,7 +51,7 @@
       "horsepower": 450,
       "make": "audi",
       "model": "a8",
-      "price": 90500.0,
+      "price": 90500,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M8b4a9d0b8bb0df22730a6ad913d8b684H0&pid=15.1"
     },
     {
@@ -60,7 +60,7 @@
       "horsepower": 200,
       "make": "audi",
       "model": "q3",
-      "price": 33700.0,
+      "price": 33700,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M2d0b16b8ecf93f68d2d40c41719e1036H0&pid=15.1"
     },
     {
@@ -69,7 +69,7 @@
       "horsepower": 220,
       "make": "audi",
       "model": "q5",
-      "price": 40900.0,
+      "price": 40900,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.Mc096c3be6c7a745ad103236721e34867H0&pid=15.1"
     },
     {
@@ -78,7 +78,7 @@
       "horsepower": 333,
       "make": "audi",
       "model": "q7",
-      "price": 58800.0,
+      "price": 58800,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M8fecf4e177901193609112640d703547H0&pid=15.1"
     },
     {
@@ -87,7 +87,7 @@
       "horsepower": 540,
       "make": "audi",
       "model": "r8",
-      "price": 162900.0,
+      "price": 162900,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.Mae0e3f2e814b5ebac8e7d27799ef6712H0&pid=15.1"
     },
     {
@@ -96,7 +96,7 @@
       "horsepower": 333,
       "make": "audi",
       "model": "s4",
-      "price": 55100.0,
+      "price": 55100,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M82eb472303f4caa475f9f3a115451d3dH0&pid=15.1"
     },
     {
@@ -105,7 +105,7 @@
       "horsepower": 333,
       "make": "audi",
       "model": "s5",
-      "price": 59350.0,
+      "price": 59350,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.Meb8c602b80480f662e4cd967c93de067H0&pid=15.1"
     },
     {
@@ -114,7 +114,7 @@
       "horsepower": 605,
       "make": "audi",
       "model": "s8",
-      "price": 114900.0,
+      "price": 114900,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.Mb3593738cde579214af0a448ae4b84deH0&pid=15.1"
     },
     {
@@ -123,7 +123,7 @@
       "horsepower": 220,
       "make": "audi",
       "model": "tt",
-      "price": 46400.0,
+      "price": 46400,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.Me6cec521bfabe34fc8c1ad225d512093H0&pid=15.1"
     },
     {
@@ -132,7 +132,7 @@
       "horsepower": 292,
       "make": "audi",
       "model": "tts",
-      "price": 51900.0,
+      "price": 51900,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M5af1f3cb9bc5ecd52ff48156b08ef5b0H0&pid=15.1"
     },
     {
@@ -141,7 +141,7 @@
       "horsepower": 240,
       "make": "bmw",
       "model": "2-series",
-      "price": 38650.0,
+      "price": 38650,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M8d2ce327068244565567a1db316398a6H0&pid=15.1"
     },
     {
@@ -150,7 +150,7 @@
       "horsepower": 240,
       "make": "bmw",
       "model": "3-series",
-      "price": 38350.0,
+      "price": 38350,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M23f6b0f90f24a3ec99fe227ef589c787H0&pid=15.1"
     },
     {
@@ -159,7 +159,7 @@
       "horsepower": 443,
       "make": "bmw",
       "model": "5-series",
-      "price": 68600.0,
+      "price": 68600,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M9bc53ff98dd6355041b33ef32b33d9e9o0&pid=15.1"
     },
     {
@@ -168,7 +168,7 @@
       "horsepower": 315,
       "make": "bmw",
       "model": "6-series",
-      "price": 77300.0,
+      "price": 77300,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M2684e57d99815199e39737bc61a2eb64H0&pid=15.1"
     },
     {
@@ -177,7 +177,7 @@
       "horsepower": 445,
       "make": "bmw",
       "model": "7-series",
-      "price": 94400.0,
+      "price": 94400,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M94fb4f09a477b76e2cd390330aeeb838H0&pid=15.1"
     },
     {
@@ -186,7 +186,7 @@
       "horsepower": 365,
       "make": "bmw",
       "model": "m2",
-      "price": 51700.0,
+      "price": 51700,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M6f0d4793d1b4c2624e947f935a477d08o0&pid=15.1"
     },
     {
@@ -195,7 +195,7 @@
       "horsepower": 425,
       "make": "bmw",
       "model": "m3",
-      "price": 63500.0,
+      "price": 63500,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.Mc2544b1749e24db7e6cd00add0418290H0&pid=15.1"
     },
     {
@@ -204,7 +204,7 @@
       "horsepower": 425,
       "make": "bmw",
       "model": "m4",
-      "price": 65700.0,
+      "price": 65700,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.Mf11cbc701eace090d246e287181d46fbH0&pid=15.1"
     },
     {
@@ -213,7 +213,7 @@
       "horsepower": 560,
       "make": "bmw",
       "model": "m5",
-      "price": 94100.0,
+      "price": 94100,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M5e0d7d271dec276389600eeafacac4e0o0&pid=15.1"
     },
     {
@@ -222,7 +222,7 @@
       "horsepower": 552,
       "make": "bmw",
       "model": "m6-gran-coupe",
-      "price": 117200.0,
+      "price": 117200,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.Mde8ec5842856b4b7211eeb7ca41f9246H0&pid=15.1"
     },
     {
@@ -231,7 +231,7 @@
       "horsepower": 300,
       "make": "bmw",
       "model": "x3",
-      "price": 46800.0,
+      "price": 46800,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.Mf6315faccfb9cb4d52485fabec358403H0&pid=15.1"
     },
     {
@@ -240,7 +240,7 @@
       "horsepower": 360,
       "make": "bmw",
       "model": "x4",
-      "price": 57800.0,
+      "price": 57800,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M1b9ad0f0cf20b47bdd2d7e404fa7bd8cH0&pid=15.1"
     },
     {
@@ -249,7 +249,7 @@
       "horsepower": 445,
       "make": "bmw",
       "model": "x5",
-      "price": 71500.0,
+      "price": 71500,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M0bf6e91ac412aa30b5e62fee045e3db5H0&pid=15.1"
     },
     {
@@ -258,7 +258,7 @@
       "horsepower": 567,
       "make": "bmw",
       "model": "x5-m",
-      "price": 98800.0,
+      "price": 98800,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.Mec012f08e524b6931ae2473537935d9bH0&pid=15.1"
     },
     {
@@ -267,7 +267,7 @@
       "horsepower": 300,
       "make": "bmw",
       "model": "x6",
-      "price": 60600.0,
+      "price": 60600,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.Me5cb5e3951c6ebbeda7ee4627d92d7feH0&pid=15.1"
     },
     {
@@ -276,7 +276,7 @@
       "horsepower": 335,
       "make": "bmw",
       "model": "z4",
-      "price": 66350.0,
+      "price": 66350,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M866fb4ba5b8091690ad048e40ee35cffH0&pid=15.1"
     },
     {
@@ -285,7 +285,7 @@
       "horsepower": 170,
       "make": "bmw",
       "model": "i3",
-      "price": 42400.0,
+      "price": 42400,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M8383a16f24040cf25473ece30fc89f37H0&pid=15.1"
     },
     {
@@ -294,7 +294,7 @@
       "horsepower": 357,
       "make": "bmw",
       "model": "i8",
-      "price": 140700.0,
+      "price": 140700,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M8cbb2251062f0f8b4a6b3f8a391af193o0&pid=15.1"
     },
     {
@@ -303,7 +303,7 @@
       "horsepower": 135,
       "make": "fiat",
       "model": "500",
-      "price": 19700.0,
+      "price": 19700,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M522df7e8ee4e17f28f4941d3a2944ce6H0&pid=15.1"
     },
     {
@@ -312,7 +312,7 @@
       "horsepower": 160,
       "make": "fiat",
       "model": "500l",
-      "price": 24795.0,
+      "price": 24795,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M2dee910aeb9f8d822763a1e469b3bf07H0&pid=15.1"
     },
     {
@@ -321,7 +321,7 @@
       "horsepower": 180,
       "make": "fiat",
       "model": "500x",
-      "price": 29110.0,
+      "price": 29110,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.Mde3d40f9e392fb9cbb8bb02423cabc7aH0&pid=15.1"
     },
     {
@@ -330,7 +330,7 @@
       "horsepower": 245,
       "make": "ford",
       "model": "edge",
-      "price": 37595.0,
+      "price": 37595,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M56bb7e997b64f67b032346cd54e63300H0&pid=15.1"
     },
     {
@@ -339,7 +339,7 @@
       "horsepower": 168,
       "make": "ford",
       "model": "escape",
-      "price": 23600.0,
+      "price": 23600,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.Mc3831bffd2d232bd0e26436351fe999dH0&pid=15.1"
     },
     {
@@ -348,7 +348,7 @@
       "horsepower": 290,
       "make": "ford",
       "model": "explorer",
-      "price": 43300.0,
+      "price": 43300,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M3eba412f6b5b7d8de387d3d1ceebbc4cH0&pid=15.1"
     },
     {
@@ -357,7 +357,7 @@
       "horsepower": 197,
       "make": "ford",
       "model": "fiesta",
-      "price": 21460.0,
+      "price": 21460,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M4026af99696a7593a555280c54148995H0&pid=15.1"
     },
     {
@@ -366,7 +366,7 @@
       "horsepower": 350,
       "make": "ford",
       "model": "focus-rs",
-      "price": 35730.0,
+      "price": 35730,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M5603f020d2c447a0ccbfde236762e762H0&pid=15.1"
     },
     {
@@ -375,7 +375,7 @@
       "horsepower": 252,
       "make": "ford",
       "model": "focus-st",
-      "price": 24425.0,
+      "price": 24425,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M2f1c6f7c1a4768ef51c7a7746bc9b560H0&pid=15.1"
     },
     {
@@ -384,7 +384,7 @@
       "horsepower": 435,
       "make": "ford",
       "model": "mustang",
-      "price": 36395.0,
+      "price": 36395,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M6f7a00de13eb07d30a1e813a867a5ae4H0&pid=15.1"
     },
     {
@@ -393,7 +393,7 @@
       "horsepower": 503,
       "make": "mercedes-benz",
       "model": "amg-gt",
-      "price": 129900.0,
+      "price": 129900,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M0d2f569fb864ebfce8e1b90b7153db3eH0&pid=15.1"
     },
     {
@@ -402,7 +402,7 @@
       "horsepower": 416,
       "make": "mercedes-benz",
       "model": "g-class",
-      "price": 119900.0,
+      "price": 119900,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.Me115a47516e6f4523387340966eb9b44o0&pid=15.1"
     },
     {
@@ -411,7 +411,7 @@
       "horsepower": 550,
       "make": "mercedes-benz",
       "model": "gl-class",
-      "price": 119450.0,
+      "price": 119450,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.Mcba843c257af811ec547266bb28d5a06H0&pid=15.1"
     },
     {
@@ -420,7 +420,7 @@
       "horsepower": 208,
       "make": "mercedes-benz",
       "model": "gla-class",
-      "price": 34500.0,
+      "price": 34500,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M51283b76ec6c684c31dc1fe9d6f7c4e5H0&pid=15.1"
     },
     {
@@ -429,7 +429,7 @@
       "horsepower": 241,
       "make": "mercedes-benz",
       "model": "glc-class",
-      "price": 38950.0,
+      "price": 38950,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M5a371fcbfb23b68f38572a460f3a17b1H0&pid=15.1"
     },
     {
@@ -438,7 +438,7 @@
       "horsepower": 302,
       "make": "mercedes-benz",
       "model": "gle-class",
-      "price": 51100.0,
+      "price": 51100,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M5e3d996bea117bdaf0f4def5698cf5c5o0&pid=15.1"
     },
     {
@@ -447,7 +447,7 @@
       "horsepower": 210,
       "make": "volkswagen",
       "model": "beetle",
-      "price": 27095.0,
+      "price": 27095,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.Ma6189f14283198e1a971ce7b041e3218H0&pid=15.1"
     },
     {
@@ -456,7 +456,7 @@
       "horsepower": 210,
       "make": "volkswagen",
       "model": "beetle-convertible",
-      "price": 29790.0,
+      "price": 29790,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M54e0f592ebabe94388d55a3e924b1690H0&pid=15.1"
     },
     {
@@ -465,7 +465,7 @@
       "horsepower": 200,
       "make": "volkswagen",
       "model": "cc",
-      "price": 34475.0,
+      "price": 34475,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M4fe2b419148fb35affdb0eae064a1892o0&pid=15.1"
     },
     {
@@ -474,7 +474,7 @@
       "horsepower": 170,
       "make": "volkswagen",
       "model": "golf",
-      "price": 18495.0,
+      "price": 18495,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M6fdd1c1864fc71003ca94aa46b3e7124H0&pid=15.1"
     },
     {
@@ -483,7 +483,7 @@
       "horsepower": 292,
       "make": "volkswagen",
       "model": "golf-r",
-      "price": 38995.0,
+      "price": 38995,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M0151237f77f817b440321d7eb80eefebH0&pid=15.1"
     },
     {
@@ -492,7 +492,7 @@
       "horsepower": 210,
       "make": "volkswagen",
       "model": "jetta",
-      "price": 28020.0,
+      "price": 28020,
       "img_url": "http://ts2.mm.bing.net/th?id=OIP.M3498c3b3dc63da8268e568e35084a190o0&pid=15.1"
     },
     {
@@ -501,7 +501,7 @@
       "horsepower": 170,
       "make": "volkswagen",
       "model": "passat",
-      "price": 22440.0,
+      "price": 22440,
       "img_url": "http://ts4.mm.bing.net/th?id=OIP.M4fe2b419148fb35affdb0eae064a1892o0&pid=15.1"
     },
     {
@@ -510,7 +510,7 @@
       "horsepower": 240,
       "make": "volvo",
       "model": "s80",
-      "price": 48375.0,
+      "price": 48375,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.M8ca93a37d82d8f0b2bf7a6555d188f6eH0&pid=15.1"
     },
     {
@@ -519,7 +519,7 @@
       "horsepower": 325,
       "make": "volvo",
       "model": "xc60",
-      "price": 46950.0,
+      "price": 46950,
       "img_url": "http://ts3.mm.bing.net/th?id=OIP.M5baa0e196f8fbbadacfee38af9e27aafH0&pid=15.1"
     },
     {
@@ -528,7 +528,7 @@
       "horsepower": 400,
       "make": "volvo",
       "model": "xc90",
-      "price": 68100.0,
+      "price": 68100,
       "img_url": "http://ts1.mm.bing.net/th?id=OIP.Md9322192f9915642fb8a38f519a15115H0&pid=15.1"
     }
   ]

@@ -25,7 +25,13 @@ Retrieve information about cars and displayed as a card list. Implement search a
 
 ### Test coverage
 
+Before to include CRUD operations (create, update and delete) into application, the test coverage was:
+
 ![testCoverate](./images/screenshot7.png)
+
+But, after include the CRUD operations, the percentatge was lower than expected. Must be improved in next steps.
+
+![testCoverate](./images/screenshot11.png)
 
 ## Exercise description
 
@@ -62,6 +68,28 @@ Used to filter the cars dinamically
 If the user clicks on a car's card, a modal will showed with an extended description about the selected car.
 
 ![mainScreen](./images/screenshot5.png)
+
+### Add new car into car's list
+
+In the upper right corner the button 'Add new car' allows user to create a new car.
+
+![mainScreen](./images/screenshot8.png)
+
+### Update and delete buttons
+
+On each car you will find two actions (in adittion to the add-remove to comparison) to update or delete a car from the list
+
+![mainScreen](./images/screenshot9.png)
+
+#### Update car
+
+The update car has the same look'n'feel that the create car window (are the same fields and validations)
+
+#### Delete car
+
+When the user clicks on the delete's button, a confirmation dialog will appear
+
+![mainScreen](./images/screenshot10.png)
 
 ### Comparison page
 
@@ -118,6 +146,10 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
+
+### `yarn test:cov`
+
+Launches the test coverage in the interactive watch mode.<br />
 
 ### `yarn build`
 

@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    minHeight: 600,
   },
   gridContainer: {
     flexGrow: 1,
@@ -37,7 +38,7 @@ const Comparison = (props: { cars: any }) => {
       if (car.selectedToCompare) {
         return (
           <Grid key={car.id} item>
-            <CarDetails car={car} currentTheme={currentTheme} />
+            <CarDetails car={car} currentTheme={currentTheme} extendedInfo />
           </Grid>
         );
       }
